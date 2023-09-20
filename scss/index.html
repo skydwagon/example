@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="diff.css">
+        <!--styles.css and diff.scss-->
+        <!--websites only understand html, css, and javascript
+            it doesnt know what scss is so you have to compile
+            the scss (or sass) before you use it.
+            you have to set up the scss library in order to 
+            start compiling it (sort of like the python libraries)
+            -> sass-lang.com/install/ -->
+        <!--compile -> sass file.scss otherfile.scss -->
+        <!--$color-name -> is now a global variable
+            @mixin theme($theme: DarkGrey){
+                background: $theme;
+                box-shadow: ...
+                color: ...
+            }
+            .ex_class1{
+                @include theme;
+            }
+            .ex_class2{
+                @include theme($theme: DarkRed);
+            }
+        -->
+        <!--MUST INCLUDE THE $ TO MAKE IT WORK-->
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Kiwi</li>
+            </ul>
+        </nav>
+    </body>
+</html>
