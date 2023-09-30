@@ -1,0 +1,41 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <!--
+        <h1 id="text" style="font-weight: bold;">
+            Click Button to Change Color!
+        </h1>
+        <button onClick="changeColor('blue')">blue</button>
+        <button onClick="changeColor('red')">red</button>
+        <button onClick="changeColor('hotpink')">hotpink</button>
+        <button onClick="changeColor('green')">green</button>
+
+        <button onClick="changeColor('event')">blue</button>
+        <button onClick="changeColor('event')">red</button>
+        <button onClick="changeColor('event')">hotpink</button>
+        <button onClick="changeColor('event')">green</button>
+        -->
+
+        <h1>This is a text</h1>
+        <button>red</button>
+        <button>blue</button>
+        <button>hotpink</button>
+        <button>green</button>
+        <button>purple</button>
+
+        <script>
+            //function changeColor(color){
+            //    document.getElementById('text').style.color = color
+            //}
+            for(let button of buttons){
+                button.addEventListener("click", changeColor);
+            }
+            function changeColor(event){
+                const header = document.querySelector("h1")
+                header.style.color = event.target.innerHTML;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <input type="text" id="colorBox" value="hotpink" onkeyup="changeColor()">
+        <button onClick="changeColor()">Click Me!</button>
+        <script>
+            function changeColor(){
+                const box = document.getElementById("colorBox");
+                const color = box.value;
+                const body = document.querySelector("body");
+                body.style.backgroundColor = color;
+            }
+            changeColor();
+        </script>
+    </body>
+</html>
